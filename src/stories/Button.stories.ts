@@ -5,8 +5,8 @@ import { Button } from './Button';
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
 const meta = {
-  title: 'Example/Button',
-  component: Button,
+  title: 'Example/Button', // 스토리북 내에서 버튼 컴포넌트를 'Example/Button'이라는 카테고리로 묶음
+  component: Button, // 이 스토리가 테스트할 컴포넌트
   parameters: {
     // Optional parameter to center the component in the Canvas. More info: https://storybook.js.org/docs/configure/story-layout
     layout: 'centered',

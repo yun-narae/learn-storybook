@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@storybook/addon-controls": "^8.5.3",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.2.0",
     "@types/jest": "^29.5.14",
     "@types/node": "^22.13.0",
     "@types/react": "^19.0.8",
@@ -25,6 +28,13 @@
       "react-app",
       "react-app/jest",
       "plugin:storybook/recommended"
+    ]
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "<rootDir>/src/components/**/*.{ts,tsx}",
+      "!**/node_modules/**",
+      "!**/*.stories.{ts,tsx}"
     ]
   },
   "browserslist": {
@@ -50,6 +60,7 @@
     "@storybook/react-webpack5": "^8.5.3",
     "@storybook/test": "^8.5.3",
     "@types/react-dom": "^19.0.3",
+    "chromatic": "^11.25.2",
     "eslint-plugin-storybook": "^0.11.2",
     "prop-types": "^15.8.1",
     "storybook": "^8.5.3",
